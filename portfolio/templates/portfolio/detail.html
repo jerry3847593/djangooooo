@@ -1,0 +1,8 @@
+<div>
+    <h1>{{portfolio.name}}</h1>
+    <p>{{portfolio.published_date}}</p>
+    <p>{{portfolio.text}}</p>
+    <a href = '{% url 'home' %}'>홈으로</a>
+    <a href = '{% url 'edit' portfolio.id  %}'>수정하기</a>
+    <a href = '{% url 'delete' portfolio.id %}'>삭제하기</a>
+</div>
